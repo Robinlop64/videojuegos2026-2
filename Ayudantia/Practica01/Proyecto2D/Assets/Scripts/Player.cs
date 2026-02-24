@@ -18,5 +18,9 @@ public class Player : MonoBehaviour
     {
         Debug.Log("choque contra " + collision.gameObject);
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log("Sigo chocando con " + collision.gameObject);
+    }
 }
 
